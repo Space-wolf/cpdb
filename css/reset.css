@@ -1,0 +1,44 @@
+/*重置样式*/
+body, h1, h2 , h5, h6, dl, dd, p{
+    margin:0;
+}
+body{
+    font:13px "微软雅黑";
+    color:#565656;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #565656;
+}
+a:hover{
+    color: #ff3c00;
+}
+img{
+    vertical-align: top;
+    border:none;
+}
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+input{
+    margin:0;
+    padding:0;
+}
+
+
