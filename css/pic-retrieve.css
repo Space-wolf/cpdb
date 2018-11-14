@@ -1,0 +1,45 @@
+.pic_retbox {
+  width: 260px;
+  height: 312px;
+  padding: 20px 30px;
+  position: absolute;
+  left: 498px;
+  top: 163px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+.pic_retbox .upload_top {
+  height: 34px;
+}
+.pic_retbox .upload_top .upload_tit {
+  height: 34px;
+  line-height: 34px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.pic_retbox .upload_top .file {
+  position: relative;
+  display: inline-block;
+  background: #D0EEFF;
+  border: 1px solid #d3daeb;
+  padding: 0 16px;
+  margin-left: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #5b74b4;
+  text-indent: 0;
+  line-height: 24px;
+}
+.file .upload_btn {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.file .upload_btn:hover {
+  background: #AADFFD;
+  border-color: #78C3F3;
+  color: #004974;
+  text-decoration: none;
+}

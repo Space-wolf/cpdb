@@ -1,0 +1,84 @@
+<!-- 单条数据录入 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/retrieval.css">
+    <link rel="stylesheet" href="../css/pic-retrieve.css">
+    <title>图片检索</title>
+</head>
+<body id="singe_dta_add">
+    <!-- 头部start -->
+    <header id="header">
+        <div class="head_left fl">
+            <h1 class="logo fl">
+                <img src="../images/logo.png" alt="">
+            </h1>
+            <nav class="nav fl">
+                <a href="">首页</a>
+                <a href="" class="btc">搜索</a>
+                <a href="">收藏夹</a>
+                <a href="">系统设置</a>
+            </nav>
+        </div>
+        <div class="head_right fr">
+            <form action="" class="search fl">
+                <input type="text" class="search_inp">
+                <i class="search_icon"></i>
+                <input type="button" value="搜索" class="search_btn">
+            </form>
+            <div class="user fl">
+                <i></i>
+                <span class="user_name">张三</span>
+            </div>
+        </div>
+    </header>
+    <!-- 头部end -->
+
+    <!-- 面包屑导航start -->
+    <section id="smenu">
+        <a href="">当前位置</a>
+        >
+        <a href="">批量数据分析</a>
+    </section>
+    <!-- 面包屑导航end -->
+
+    <!-- 主体start -->
+    <section class="retrieval">
+        <div class="retrieval_box"> 
+            <div class="condition">
+                <a href="">条件搜索</a>
+                <a href="">批量搜索</a>
+                <a href="">职位变动搜索</a>
+                <a href="">图片搜索</a>
+            </div>
+            <form action="" class="ret_box">
+                <select class="fl">
+                    <option value="姓名">姓名</option>
+                    <option value="年龄">年龄</option>
+                    <option value="性别">性别</option>
+                </select>
+                <input type="text" class="fl">
+                <button type="submit" value="submit" class="ret_btn fl">搜索</button>
+            </form>
+        </div>
+        <div class="pic_retbox">
+            <div class="upload_top">
+                <span class="upload_tit fl">上传图片</span>
+                <a href="javascript:;" class="file">
+                        选择图片
+                    <input type="file" name="fileName" id="upload_btn" class="upload_btn fl">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- 主体end -->
+
+    
+</body>
+</html>
