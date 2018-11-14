@@ -1,0 +1,85 @@
+.batchret {
+  width: 100%;
+  min-height: 615px;
+  position: relative;
+}
+.batchret .batchret_box {
+  width: 440px;
+  height: 288px;
+  padding: 18px 38px;
+  position: absolute;
+  left: 406px;
+  top: 101px;
+  border: 1px solid #e3e3e3;
+}
+.batchret .batchret_box .b_top {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 16px;
+}
+.batchret .batchret_box .close_icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url(../svg/close.svg) no-repeat center;
+  position: absolute;
+  top: 16px;
+  right: 23px;
+  cursor: pointer;
+}
+.batchret .batchret_box .batch_form {
+  width: 100%;
+}
+textarea::-webkit-input-placeholder {
+  color: #a7abb5;
+}
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a7abb5;
+}
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a7abb5;
+}
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a7abb5;
+}
+.b_top .b_name {
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  font-size: 30px;
+  color: #504f5e;
+  font-weight: bold;
+}
+.b_top .b_desc {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #9da0a5;
+  margin-left: 16px;
+}
+.batch_form textarea {
+  padding: 10px 15px;
+  width: 408px;
+  height: 146px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #a7abb5;
+  resize: none;
+}
+.batch_form .bat_sbtn {
+  width: 96px;
+  height: 24px;
+  border: 1px solid #4f6aaf;
+  background-color: #4f6aaf;
+  color: #fff;
+}
+.batch_form .cancel {
+  width: 96px;
+  height: 24px;
+  margin-right: 5px;
+  border: 1px solid #d3daeb;
+  color: #4f6aaf;
+}
