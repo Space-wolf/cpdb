@@ -4,9 +4,10 @@
     padding: 20px 30px;
     position: absolute;
     left: 498px;
-    top: 163px;
+    top: 80px;
     background-color: #fff;
     border: 1px solid #e3e3e3;
+    display: block;
     .upload_top{
         height: 34px;
         .upload_tit{
@@ -29,6 +30,41 @@
             line-height: 24px;
         }
     }
+    .upload_info{
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        color: #c2c4c6;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .default_pic{
+        display: block;
+        width: 108px;
+        height: 148px;
+        border: 1px solid #d3d3d5;
+        margin: 5px auto 0;
+    }
+    .btns{
+        margin-top: 36px;
+        height: 24px;
+        text-align: center;
+        input{
+            width:98px;
+            height: 22px;
+            font-size: 12px;
+        }
+        .clobtn{
+            border: 1px solid #d3daeb;
+            background-color: #ffffff;
+            color: #4f6aaf;
+        }
+        .subbtn{
+            border: 1px solid #4f6aaf;
+            background-color: #4f6aaf;
+            color: #fff;
+        }
+    }
 }
 .file .upload_btn{
     position: absolute;
@@ -41,5 +77,41 @@
         border-color: #78C3F3;
         color: #004974;
         text-decoration: none;
+    }
+}
+.close_icon{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../svg/close.svg) no-repeat center;
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    cursor: pointer;
+}
+.upload_err{
+    width: 198px;
+    height: 313px;
+    position: absolute;
+    left: 525px;
+    top: 80px;
+    border: 1px solid #e3e3e3;
+    padding: 20px 30px;
+    background-color: #fff;
+    p{
+        height: 30px;
+        line-height: 30px;
+        font-size: 26px;
+        font-weight: bold;
+        color: #894747;
+    }
+    input{
+        display: block;
+        width: 118px;
+        height: 23px;
+        border: 1px solid #d3daeb;
+        background-color: #fff;
+        color: #4f6aaf;
+        margin: 104px auto 0;
     }
 }

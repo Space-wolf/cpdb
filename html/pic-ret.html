@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>检索</title>
+    <title>图片检索</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/retrieval.css">
 </head>
 <body id="singe_dta_add">
     <!-- 头部start -->
@@ -48,6 +47,7 @@
 
     <!-- 主体start -->
     <section class="retrieval">
+        <!-- 检索框start -->
         <div class="retrieval_box"> 
             <div class="condition">
                 <a href="">条件搜索</a>
@@ -65,7 +65,39 @@
                 <button type="submit" value="submit" class="ret_btn fl">搜索</button>
             </form>
         </div>
+        <!-- 检索框end -->
+
+        <!-- 图片上传start -->
+        <form action="" class="pic_retbox">
+            <div class="upload_top">
+                <span class="upload_tit fl">上传图片</span>
+                <a href="javascript:;" class="file">
+                        选择图片
+                    <input type="file" name="fileName" id="upload_btn" class="upload_btn fl">
+                </a>    
+            </div>
+            <i class="close_icon"></i>
+            <p class="upload_info">
+                图片大小不超过2M
+            </p>
+            <img src="../images/people.png" alt="" class="default_pic">
+            <div class="btns">
+                <input type="button" value="取消" class="clobtn">
+                <input type="submit" value="确定" class="subbtn">
+            </div>
+        </form>
+        <!-- 图片上传end -->
+
+        <!-- 图片上传失败start -->
+        <div class="upload_err">
+            <p>上传失败</p>
+            <i class="close_icon"></i>
+            <input type="button" value="重新上传图片">
+        </div>
+        <!-- 图片上传失败end -->
     </section>
     <!-- 主体end -->
+
+    
 </body>
 </html>
