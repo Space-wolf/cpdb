@@ -1,14 +1,13 @@
 .cdts_content {
   width: 1000px;
   height: 100%;
-  margin: 0 auto;
+  margin: 25px auto 0;
 }
 .cdts_content .cdts_top {
   width: 100%;
 }
 .cdts_content .cdts_top .ret_reset {
   width: 438px;
-  margin-top: 25px;
 }
 .cdts_content .cdts_box {
   width: 100%;
@@ -180,6 +179,8 @@
   padding: 20px 30px;
   border: 2px solid #dedede;
   margin-bottom: 20px;
+  position: relative;
+  background-color: #f7f7f7;
 }
 .resulf_items .resulf_item img {
   width: 90px;
@@ -248,4 +249,37 @@
 }
 .info_top .top_right .collection {
   background: url(../svg/collection.svg) no-repeat;
+}
+.info_bottom {
+  width: 100%;
+  margin-top: 10px;
+}
+.info_bottom .inf_bottom_left {
+  width: 215px;
+}
+.info_bottom .inf_bottom_right {
+  width: 200px;
+}
+.others {
+  height: 25px;
+  line-height: 25px;
+}
+.others label {
+  margin-right: 14px;
+  font-size: 12px;
+  color: #999999;
+}
+.others .right_label {
+  display: inline-block;
+  width: 72px;
+  text-align: right;
+}
+.others span {
+  font-size: 14px;
+  color: #666666;
+}
+.btn_posi {
+  position: absolute;
+  left: 10px;
+  top: 11px;
 }

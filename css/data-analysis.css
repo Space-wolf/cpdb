@@ -1,0 +1,54 @@
+.table_figure {
+  width: 1000px;
+  margin: 0 auto;
+}
+.table_figure h5 {
+  width: 100%;
+  margin-top: 15px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #555659;
+}
+.table_figure .tf_box {
+  width: 100%;
+  height: 353px;
+  margin-top: 23px;
+}
+.tfinfo_names {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+.tfinfo_names li {
+  float: left;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555659;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.tfinfo_names .licheck {
+  margin-left: -1px;
+  margin-right: -1px;
+  border: 1px solid #e3e3e3;
+  border-bottom: none;
+  background-color: #fff;
+}
+.figure_box {
+  width: 998px;
+  height: 308px;
+  border: 1px solid #e3e3e3;
+}
+.figure_box .show {
+  display: block;
+}
+.figure_box li {
+  width: 100%;
+  height: 308px;
+  display: block;
+}

@@ -1,9 +1,12 @@
 body {
-  width: 1366px;
-  margin: 0 auto;
+  width: 100%;
   height: 100%;
 }
 /*通用头部start*/
+.wrap {
+  width: 1366px;
+  margin: 0 auto;
+}
 #header {
   width: 100%;
   height: 48px;
@@ -97,14 +100,24 @@ body {
   color: #ffffff;
   border-color: #cc4139;
 }
+@media only all and (max-width: 1366px) {
+  .wrap {
+    width: 100%;
+  }
+}
 /*通用头部end*/
 /* 面包屑导航start */
 #smenu {
+  width: 100%;
   height: 35px;
-  padding: 0 40px;
   background-color: #f3f4f8;
 }
-#smenu a {
+#smenu .smenu_box {
+  margin: 0 auto;
+  width: 1286px;
+  padding: 0 40px;
+}
+#smenu .smenu_box a {
   height: 35px;
   line-height: 35px;
   color: #aaabae;

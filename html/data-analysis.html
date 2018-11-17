@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>批量数据分析</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/data-analysis.css">
+    <script src="../js/jquery1.11.1.min.js"></script>
+    <script src="../js/echarts.js"></script>
+</head>
+
+<body>
+    <!-- 头部start -->
+    <header id="header">
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部end -->
+
+    <!-- 面包屑导航start -->
+    <section id="smenu">
+        <div class="smenu_box">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">批量数据分析</a>
+        </div>
+    </section>
+    <!-- 面包屑导航end -->
+
+    <!-- 表图主体start -->
+    <section class="table_figure clearfix">
+        <h5 class="fl">批量数据分析</h5>
+        <div class="tf_box fl">
+            <ul class="tfinfo_names fl">
+                <li class="licheck">年龄统计</li>
+                <li>性别统计</li>
+                <li>职级统计</li>
+                <li>行政属地统计</li>
+                <li>行政单位统计</li>
+                <li>籍贯统计</li>
+                <li>学历统计</li>
+                <li>全部统计</li>
+            </ul>
+            <ul class="figure_box fl">
+                <li id="age_figure"></li>
+                <li id="sex_figure"></li>
+                <li id="rank_figure"></li>
+                <li id="job_adress_figure"></li>
+                <li id="units_figure"></li>
+                <li id="adress_figure"></li>
+                <li id="record_figure"></li>
+                <li id="all_figure"></li>
+                <script type="text/javascript">
+                    $(function () {
+                        var age_figure = echarts.init(document.getElementById('age_figure'));
+
+                        var option = {
+
+                            legend: {
+                                // orient: 'vertical',
+                                // top: 'middle',
+                                bottom: 10,
+                                left: 'center',
+                                data: ['55岁', '56岁', '57岁', '58岁', '59岁', '60岁', '61岁', '62岁', '63岁', '64岁', '90岁']
+                            },
+                            series: [
+                                {
+                                    type: 'pie',
+                                    radius: '65%',
+                                    center: ['50%', '50%'],
+                                    selectedMode: 'single',
+                                    data: [
+                                        { value: 456, name: '55岁' },
+                                        { value: 535, name: '56岁' },
+                                        { value: 510, name: '57岁' },
+                                        { value: 634, name: '58岁' },
+                                        { value: 735, name: '59岁' },
+                                        { value: 862, name: '60岁' },
+                                        { value: 156, name: '61岁' },
+                                        { value: 458, name: '62岁' },
+                                        { value: 354, name: '63岁' },
+                                        { value: 255, name: '64岁' },
+                                        { value: 55, name: '90岁' },
+                                    ],
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }
+                            ]
+                        };
+
+                        // 使用刚指定的配置项和数据显示图表。
+                        age_figure.setOption(option);
+                    });
+                </script>
+            </ul>
+        </div>
+    </section>
+    <!-- 表图主体end -->
+</body>
+
+</html>

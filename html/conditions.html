@@ -14,26 +14,28 @@
 <body id="singe_dta_add">
     <!-- 头部start -->
     <header id="header">
-        <div class="head_left fl">
-            <h1 class="logo fl">
-                <img src="../images/logo.png" alt="">
-            </h1>
-            <nav class="nav fl">
-                <a href="">首页</a>
-                <a href="" class="btc">搜索</a>
-                <a href="">收藏夹</a>
-                <a href="">系统设置</a>
-            </nav>
-        </div>
-        <div class="head_right fr">
-            <form action="" class="search fl">
-                <input type="text" class="search_inp">
-                <i class="search_icon"></i>
-                <input type="button" value="搜索" class="search_btn">
-            </form>
-            <div class="user fl">
-                <i></i>
-                <span class="user_name">张三</span>
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
             </div>
         </div>
     </header>
@@ -41,9 +43,11 @@
 
     <!-- 面包屑导航start -->
     <section id="smenu">
-        <a href="">当前位置</a>
-        >
-        <a href="">批量数据分析</a>
+        <div class="smenu_box">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">批量数据分析</a>
+        </div>
     </section>
     <!-- 面包屑导航end -->
 
@@ -53,8 +57,8 @@
             <div class="ret_box ret_reset">
                 <select class="fl">
                     <option value="姓名">姓名</option>
-                    <option value="年龄">年龄</option>
-                    <option value="性别">性别</option>
+                    <option value="职位">职位</option>
+                    
                 </select>
                 <input type="text" class="fl">
                 <button type="submit" value="submit" class="ret_btn fl">搜索</button>
@@ -247,16 +251,98 @@
                                 <span>职位树位置</span>
                                 <a href="" class="fourteen">北京/市委</a>
                             </div>
-                            <div class="top_right fr">                               
-                                <a href="" class="contrast">加入对比</a> 
-                                <a href="" class="modify">修改</a>  
-                                <a href="" class="collection">收藏</a>  
+                            <div class="top_right fr">
+                                <a href="" class="contrast">加入对比</a>
+                                <a href="" class="modify">修改</a>
+                                <a href="" class="collection">收藏</a>
                             </div>
+                        </div>
+                        <div class="info_bottom">
+                            <ul class="inf_bottom_left fl">
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>汉族</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>吉林梨树</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">学历</label>
+                                    <span>研究生</span>
+                                </li>
+                            </ul>
+                            <ul class="inf_bottom_right fl">
+                                <li class="others">
+                                    <label class="right_label">出生日期</label>
+                                    <span>1964-08</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">参加工作时间</label>
+                                    <span>1985-09</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">入党时间</label>
+                                    <span>1984-07</span>
+                                </li>
+                            </ul>
+                            <div class="checkbox btn_posi"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="resulf_item fl">
+                    <img src="../images/people2.jpg" alt="" class="fl">
+                    <div class="text_info fl">
+                        <div class="info_top">
+                            <div class="top_left fl">
+                                <a href="" class="position fourteen">天津市委副书记、市长</a>
+                                <a href="" class="peo_name fourteen">张国清</a>
+                            </div>
+                            <div class="top_center fl">
+                                <span>职位树位置</span>
+                                <a href="" class="fourteen">北京/市委</a>
+                            </div>
+                            <div class="top_right fr">
+                                <a href="" class="contrast">加入对比</a>
+                                <a href="" class="modify">修改</a>
+                                <a href="" class="collection">收藏</a>
+                            </div>
+                        </div>
+                        <div class="info_bottom">
+                            <ul class="inf_bottom_left fl">
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>汉族</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>河南梨山</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">学历</label>
+                                    <span>研究生</span>
+                                </li>
+                            </ul>
+                            <ul class="inf_bottom_right fl">
+                                <li class="others">
+                                    <label class="right_label">出生日期</label>
+                                    <span>1964-08</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">参加工作时间</label>
+                                    <span>1985-09</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">入党时间</label>
+                                    <span>1984-07</span>
+                                </li>
+                            </ul>
+                            <div class="checked btn_posi"></div>
                         </div>
                     </div>
                 </li>
             </ul>
-        </div>  
+        </div>
     </section>
     <!-- 条件检索主体end -->
     <script src="../js/laydate/laydate.js"></script>
@@ -306,7 +392,7 @@
             type: 'month',
             format: 'MM'
         });
-        
+
     </script>
 </body>
 

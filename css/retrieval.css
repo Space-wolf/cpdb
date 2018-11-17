@@ -4,6 +4,10 @@
   position: relative;
 }
 .retrieval .retrieval_box {
+  position: relative;
+  min-height: 615px;
+}
+.retrieval .retrieval_box .retrieval_content {
   width: 438px;
   height: 72px;
   position: absolute;

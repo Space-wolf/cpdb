@@ -14,26 +14,28 @@
 <body>
     <!-- 头部start -->
     <header id="header">
-        <div class="head_left fl">
-            <h1 class="logo fl">
-                <img src="../images/logo.png" alt="">
-            </h1>
-            <nav class="nav fl">
-                <a href="">首页</a>
-                <a href="" class="btc">搜索</a>
-                <a href="">收藏夹</a>
-                <a href="">系统设置</a>
-            </nav>
-        </div>
-        <div class="head_right fr">
-            <form action="" class="search fl">
-                <input type="text" class="search_inp">
-                <i class="search_icon"></i>
-                <input type="button" value="搜索" class="search_btn">
-            </form>
-            <div class="user fl">
-                <i></i>
-                <span class="user_name">张三</span>
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
             </div>
         </div>
     </header>
@@ -41,26 +43,29 @@
 
     <!-- 面包屑导航start -->
     <section id="smenu">
-        <a href="">当前位置</a>
-        >
-        <a href="">批量数据分析</a>
+        <div class="smenu_box">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">批量数据分析</a>
+        </div>
     </section>
     <!-- 面包屑导航end -->
 
     <!-- 主体start -->
     <section class="batchret">
-        <div class="batchret_box">
-            <div class="b_top">
-                <span class="b_name">批量搜索</span>
-                <span class="b_desc">请输入人名，并用逗号隔开，如图所示</span>
+        <div class="batchret_box wrap">
+            <div class="batchret_content">
+                <div class="b_top">
+                    <span class="b_name">批量搜索</span>
+                    <span class="b_desc">请输入人名，并用逗号隔开，如图所示</span>
+                </div>
+                <i class="close_icon"></i>
+                <form action="" class="batch_form">
+                    <textarea name="" placeholder="蔡国庆，李克，徐红"></textarea>
+                    <input type="button" value="搜索" class="bat_sbtn fr">
+                    <input type="button" value="取消" class="cancel fr">
+                </form>
             </div>
-            <i class="close_icon"></i>
-            <form action="" class="batch_form">
-                <textarea name="" placeholder="蔡国庆，李克，徐红"></textarea>
-                <input type="button" value="搜索" class="bat_sbtn fr">
-                <input type="button" value="取消" class="cancel fr">
-            </form>
-            
         </div>
     </section>
     <!-- 主体end -->

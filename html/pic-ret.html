@@ -1,6 +1,7 @@
 <!-- 单条数据录入 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,35 @@
     <title>图片检索</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/retrieval.css">
+    <link rel="stylesheet" href="../css/pic-retrieve.css">
 </head>
+
 <body id="singe_dta_add">
     <!-- 头部start -->
     <header id="header">
-        <div class="head_left fl">
-            <h1 class="logo fl">
-                <img src="../images/logo.png" alt="">
-            </h1>
-            <nav class="nav fl">
-                <a href="">首页</a>
-                <a href="" class="btc">搜索</a>
-                <a href="">收藏夹</a>
-                <a href="">系统设置</a>
-            </nav>
-        </div>
-        <div class="head_right fr">
-            <form action="" class="search fl">
-                <input type="text" class="search_inp">
-                <i class="search_icon"></i>
-                <input type="button" value="搜索" class="search_btn">
-            </form>
-            <div class="user fl">
-                <i></i>
-                <span class="user_name">张三</span>
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
             </div>
         </div>
     </header>
@@ -39,65 +45,67 @@
 
     <!-- 面包屑导航start -->
     <section id="smenu">
-        <a href="">当前位置</a>
-        >
-        <a href="">批量数据分析</a>
+        <div class="smenu_box wrap">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">批量数据分析</a>
+        </div>
     </section>
     <!-- 面包屑导航end -->
 
     <!-- 主体start -->
     <section class="retrieval">
-        <!-- 检索框start -->
-        <div class="retrieval_box"> 
-            <div class="condition">
-                <a href="">条件搜索</a>
-                <a href="">批量搜索</a>
-                <a href="">职位变动搜索</a>
-                <a href="">图片搜索</a>
+        <div class="retrieval_box wrap">
+            <!-- 检索框start -->
+            <div class="retrieval_content">
+                <div class="condition">
+                    <a href="">条件搜索</a>
+                    <a href="">批量搜索</a>
+                    <a href="">职位变动搜索</a>
+                    <a href="">图片搜索</a>
+                </div>
+                <form action="" class="ret_box">
+                    <select class="fl">
+                        <option value="姓名">姓名</option>
+                        <option value="职位">职位</option>
+                    </select>
+                    <input type="text" class="fl">
+                    <button type="submit" value="submit" class="ret_btn fl">搜索</button>
+                </form>
             </div>
-            <form action="" class="ret_box">
-                <select class="fl">
-                    <option value="姓名">姓名</option>
-                    <option value="年龄">年龄</option>
-                    <option value="性别">性别</option>
-                </select>
-                <input type="text" class="fl">
-                <button type="submit" value="submit" class="ret_btn fl">搜索</button>
-            </form>
-        </div>
-        <!-- 检索框end -->
+            <!-- 检索框end -->
 
-        <!-- 图片上传start -->
-        <form action="" class="pic_retbox">
-            <div class="upload_top">
-                <span class="upload_tit fl">上传图片</span>
-                <a href="javascript:;" class="file">
+            <!-- 图片上传start -->
+            <form action="" class="pic_retbox">
+                <div class="upload_top">
+                    <span class="upload_tit fl">上传图片</span>
+                    <a href="javascript:;" class="file">
                         选择图片
-                    <input type="file" name="fileName" id="upload_btn" class="upload_btn fl">
-                </a>    
-            </div>
-            <i class="close_icon"></i>
-            <p class="upload_info">
-                图片大小不超过2M
-            </p>
-            <img src="../images/people.png" alt="" class="default_pic">
-            <div class="btns">
-                <input type="button" value="取消" class="clobtn">
-                <input type="submit" value="确定" class="subbtn">
-            </div>
-        </form>
-        <!-- 图片上传end -->
+                        <input type="file" name="fileName" id="upload_btn" class="upload_btn fl">
+                    </a>
+                </div>
+                <i class="close_icon"></i>
+                <p class="upload_info">
+                    图片大小不超过2M
+                </p>
+                <img src="../images/people.png" alt="" class="default_pic">
+                <div class="btns">
+                    <input type="button" value="取消" class="clobtn">
+                    <input type="submit" value="确定" class="subbtn">
+                </div>
+            </form>
+            <!-- 图片上传end -->
 
-        <!-- 图片上传失败start -->
-        <div class="upload_err">
-            <p>上传失败</p>
-            <i class="close_icon"></i>
-            <input type="button" value="重新上传图片">
+            <!-- 图片上传失败start -->
+            <div class="upload_err">
+                <p>上传失败</p>
+                <i class="close_icon"></i>
+                <input type="button" value="重新上传图片">
+            </div>
+            <!-- 图片上传失败end -->
         </div>
-        <!-- 图片上传失败end -->
     </section>
     <!-- 主体end -->
-
-    
 </body>
+
 </html>
