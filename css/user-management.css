@@ -1,0 +1,52 @@
+.userMmanagement {
+  width: 100%;
+}
+.userMmanagement .user_manageBox .superLeft_nav {
+  margin-top: 20px;
+}
+.userMmanagement .user_manageBox .right_user_manage {
+  min-width: 670px;
+  padding-left: 10px;
+}
+.right_user_manage h5 {
+  height: 62px;
+  line-height: 62px;
+  font-size: 18px;
+  color: #3b3c40;
+}
+.right_user_manage .user_info {
+  margin-top: 40px;
+}
+.right_user_manage .user_info .item {
+  width: 100%;
+  height: 44px;
+}
+.right_user_manage .user_info .btn_box {
+  width: 100%;
+  height: 24px;
+  margin: 15px 0 10px 0;
+}
+.item span {
+  display: inline-block;
+  line-height: 44px;
+  font-size: 14px;
+}
+.item .iLeft {
+  width: 160px;
+  color: #929295;
+  text-align: right;
+  margin-right: 35px;
+}
+.item .iRight {
+  color: #3b3c40;
+}
+.btn_box button {
+  margin-left: 192px;
+  width: 112px;
+  height: 22px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #4f6aaf;
+  border: 1px solid #4f6aaf;
+  cursor: pointer;
+}

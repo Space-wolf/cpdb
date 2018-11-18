@@ -8,7 +8,7 @@
     <title>超级管理员</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css//super-administrato.css">
+    <link rel="stylesheet" href="../css/super-administrato.css">
 </head>
 
 <body>
@@ -240,9 +240,76 @@
                     </tr>
                 </table>
 
-                <div class="paging"></div>
+                <div class="paging">
+                    <span class="prev_page"></span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>...</span>
+                    <span>15</span>
+                    <span class="next_page"></span>
+                </div>
             </div>
             <!-- 右侧用户列表页end -->
+
+            <!-- 新增用户弹窗start -->
+            <form action="" id="add_user" class="add_user">
+                <h5 class="popub_tit">新增用户</h5>
+                <p class="popub_p">
+                    <label for="">用户名称</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p">
+                    <label for="">真实姓名</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p">
+                    <label for="">密码</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p btns">
+                    <input type="button" value="取消" class="close_btn">
+                    <input type="submit" value="确认" class="sub_btn">
+                </p>
+            </form>
+            <!-- 新增用户弹窗end -->
+
+            <!-- 修改密码弹窗start -->
+            <form action="" id="add_user" class="update_pwd">
+                <h5 class="popub_tit">修改密码</h5>
+                <p class="popub_p">
+                    <label for="">原密码</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p">
+                    <label for="">新密码</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p btns">
+                    <input type="button" value="取消" class="close_btn">
+                    <input type="submit" value="确认" class="sub_btn">
+                </p>
+            </form>
+            <!-- 修改密码弹窗end -->
+
+            <!-- 修改信息弹窗start -->
+            <form action="" id="add_user" class="update_username">
+                <h5 class="popub_tit">修改信息</h5>
+                <p class="popub_p">
+                    <label for="">用户名称</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p">
+                    <label for="">真实姓名</label>
+                    <input type="text" name="" id="">
+                </p>
+                <p class="popub_p btns">
+                    <input type="button" value="取消" class="close_btn">
+                    <input type="submit" value="确认" class="sub_btn">
+                </p>
+            </form>
+            <!-- 修改信息弹窗end -->
         </div>
     </section>
     <!-- 超级管理员end -->

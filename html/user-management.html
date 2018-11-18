@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>普通用户管理</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/user-management.css">
+</head>
+
+<body>
+    <!-- 头部start -->
+    <header id="header">
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部end -->
+
+    <!-- 面包屑导航start -->
+    <section id="smenu">
+        <div class="smenu_box">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">系统管理</a>
+        </div>
+    </section>
+    <!-- 面包屑导航end -->
+
+    <!-- 主体内容start -->
+    <section class="userMmanagement">
+        <div class="user_manageBox wrap clearfix">
+            <!-- 左侧菜单start -->
+            <ul class="superLeft_nav fl">
+                <li class="b_classify clearfix">
+                    <label class="cla_ifyname fl">系统管理</label>
+                    <ul class="s_classify_box fl">
+                        <li class="showbg">用户管理</li>
+                        <li>操作流程</li>
+                        <li>权限管理</li>
+                    </ul>
+                </li>
+                <li class="b_classify clearfix">
+                    <label class="cla_ifyname fl">数据管理</label>
+                    <ul class="s_classify_box fl">
+                        <li>单条数据录入</li>
+                        <li>批量数据录入</li>
+                        <li>系统字段管理</li>
+                        <li>职位树配置</li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 左侧菜单end -->
+
+            <div class="right_user_manage fl">
+                <h5>用户管理</h5>
+                <div class="user_info">
+                    <p class="item">
+                        <span class="iLeft">用户ID</span>
+                        <span class="iRight">15645524552</span>
+                    </p>
+                    <p class="item">
+                        <span class="iLeft">用户名</span>
+                        <span class="iRight">张三</span>
+                    </p>
+                    <p class="item">
+                        <span class="iLeft">真实姓名</span>
+                        <span class="iRight">张一山</span>
+                    </p>
+                    <p class="btn_box">
+                        <button>修改密码</button>
+                    </p>
+                    <p class="btn_box">
+                        <button>退出当前账号</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 主体内容end -->
+</body>
+
+</html>
