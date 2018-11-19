@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/data-analysis.css">
     <script src="../js/jquery1.11.1.min.js"></script>
     <script src="../js/echarts.js"></script>
+    <script src="../js/init.js"></script>
 </head>
 
 <body>
@@ -69,60 +70,13 @@
             </ul>
             <ul class="figure_box fl">
                 <li id="age_figure" class="show"></li>
-                <li id="sex_figure"></li>
-                <li id="rank_figure"></li>
-                <li id="job_adress_figure"></li>
-                <li id="units_figure"></li>
-                <li id="adress_figure"></li>
-                <li id="record_figure"></li>
-                <li id="all_figure"></li>
-                <script type="text/javascript">
-                    $(function () {
-                        var age_figure = echarts.init(document.getElementById('age_figure'));
-
-                        var option = {
-
-                            legend: {
-                                // orient: 'vertical',
-                                // top: 'middle',
-                                bottom: 10,
-                                left: 'center',
-                                data: ['55岁', '56岁', '57岁', '58岁', '59岁', '60岁', '61岁', '62岁', '63岁', '64岁', '90岁']
-                            },
-                            series: [
-                                {
-                                    type: 'pie',
-                                    radius: '65%',
-                                    center: ['50%', '50%'],
-                                    selectedMode: 'single',
-                                    data: [
-                                        { value: 456, name: '55岁' },
-                                        { value: 535, name: '56岁' },
-                                        { value: 510, name: '57岁' },
-                                        { value: 634, name: '58岁' },
-                                        { value: 735, name: '59岁' },
-                                        { value: 862, name: '60岁' },
-                                        { value: 156, name: '61岁' },
-                                        { value: 458, name: '62岁' },
-                                        { value: 354, name: '63岁' },
-                                        { value: 255, name: '64岁' },
-                                        { value: 55, name: '90岁' },
-                                    ],
-                                    itemStyle: {
-                                        emphasis: {
-                                            shadowBlur: 10,
-                                            shadowOffsetX: 0,
-                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                        }
-                                    }
-                                }
-                            ]
-                        };
-
-                        // 使用刚指定的配置项和数据显示图表。
-                        age_figure.setOption(option);
-                    });
-                </script>
+                <li id="sex_figure">222</li>
+                <li id="rank_figure">333</li>
+                <li id="job_adress_figure">444</li>
+                <li id="units_figure">555</li>
+                <li id="adress_figure">666</li>
+                <li id="record_figure">777</li>
+                <li id="all_figure">888</li>
             </ul>
         </div>
     </section>

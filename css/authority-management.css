@@ -59,9 +59,17 @@
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  background: url(../svg/unchecked.svg) no-repeat;
   vertical-align: middle;
   cursor: pointer;
+}
+.right_checkBoxes .unchecked {
+  background: url(../svg/unchecked.svg) no-repeat;
+}
+.right_checkBoxes .checked {
+  background: url(../svg/checked.svg) no-repeat;
+}
+.right_checkBoxes .disabled {
+  background-color: #cad1db;
 }
 .right_checkBoxes span {
   display: inline-block;
@@ -100,14 +108,4 @@
   background-color: #4f6aaf;
   font-size: 12px;
   color: #fff;
-}
-.btn_box button {
-  margin-left: 192px;
-  width: 112px;
-  height: 22px;
-  font-size: 14px;
-  background-color: #fff;
-  color: #4f6aaf;
-  border: 1px solid #4f6aaf;
-  cursor: pointer;
 }
