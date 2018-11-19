@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>权限管理</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/authority-management.css">
+</head>
+
+<body>
+    <!-- 头部start -->
+    <header id="header">
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部end -->
+
+    <!-- 面包屑导航start -->
+    <section id="smenu">
+        <div class="smenu_box">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">权限管理</a>
+        </div>
+    </section>
+    <!-- 面包屑导航end -->
+
+    <!-- 主体内容start -->
+    <section class="authority_management">
+        <div class="authorityBox wrap clearfix">
+            <!-- 左侧菜单start -->
+            <ul class="superLeft_nav fl">
+                <li class="b_classify clearfix">
+                    <label class="cla_ifyname fl">系统管理</label>
+                    <ul class="s_classify_box fl">
+                        <li class="showbg">用户管理</li>
+                        <li>操作流程</li>
+                        <li>权限管理</li>
+                    </ul>
+                </li>
+                <li class="b_classify clearfix">
+                    <label class="cla_ifyname fl">数据管理</label>
+                    <ul class="s_classify_box fl">
+                        <li>单条数据录入</li>
+                        <li>批量数据录入</li>
+                        <li>系统字段管理</li>
+                        <li>职位树配置</li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 左侧菜单end -->
+
+            <form action="" class="right_authority fl">
+                <h5>权限管理</h5>
+                <p class="auth_thear">
+                    <span class="classify1 fl">类别</span>
+                    <span class="classify2 fl">权限名称</span>
+                </p>
+                <ul class="authority_content">
+                    <li class="authority_item fl">
+                        <span class="left_classify_name fl">数据权限</span>
+                        <ul class="right_checkBoxes fl">
+                            <li class="fl">
+                                <i></i>
+                                <span>数据录入权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>简历修改权限</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="authority_item fl">
+                        <span class="left_classify_name fl">操作权限</span>
+                        <ul class="right_checkBoxes fl">
+                            <li class="fl">
+                                <i></i>
+                                <span>数据导出权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>数据搜索权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>批量分析权限</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="authority_item fl">
+                        <span class="left_classify_name fl">系统权限</span>
+                        <ul class="right_checkBoxes fl">
+                            <li class="fl">
+                                <i></i>
+                                <span>用户管理权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>操作记录浏览权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>权限管理权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>职位树管理权限</span>
+                            </li>
+                            <li class="fl">
+                                <i></i>
+                                <span>职位、学校字段管理权限</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="footer_btns fl">
+                    <input type="button" value="恢复基本设置" class="default_btn">
+                    <input type="button" value="取消" class="cancel_btn">
+                    <input type="submit" value="保存" class="submit_btn">
+                </p>
+            </form>
+        </div>
+    </section>
+    <!-- 主体内容end -->
+</body>
+
+</html>

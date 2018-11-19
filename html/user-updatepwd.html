@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>普通用户管理</title>
+    <title>修改密码</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/user-management.css">
+    <link rel="stylesheet" href="../css/user-updatepwd.css">
 </head>
 
 <body>
@@ -52,8 +52,8 @@
     <!-- 面包屑导航end -->
 
     <!-- 主体内容start -->
-    <section class="userMmanagement">
-        <div class="user_manageBox wrap clearfix">
+    <section class="user_update">
+        <div class="user_updateBox wrap clearfix">
             <!-- 左侧菜单start -->
             <ul class="superLeft_nav fl">
                 <li class="b_classify clearfix">
@@ -76,29 +76,28 @@
             </ul>
             <!-- 左侧菜单end -->
 
-            <div class="right_user_manage fl">
+            <form action="" class="right_user_update fl">
                 <h5>用户管理</h5>
                 <div class="user_info">
+                    <p class="u_info_tit">修改密码</p>
                     <p class="item">
                         <span class="iLeft">当前密码</span>
-                        <span class="iRight">15645524552</span>
+                        <input type="text" class="iRight_input">
                     </p>
                     <p class="item">
                         <span class="iLeft">新密码</span>
-                        <span class="iRight">张三</span>
+                        <input type="text" class="iRight_input">
                     </p>
                     <p class="item">
                         <span class="iLeft">确认新密码</span>
-                        <span class="iRight">张一山</span>
+                        <input type="text" class="iRight_input">
                     </p>
-                    <p class="btn_box">
-                        <button>修改密码</button>
-                    </p>
-                    <p class="btn_box">
-                        <button>退出当前账号</button>
+                    <p class="u_info_tit">
+                        <input type="button" value="取消">
+                        <input type="submit" value="保存">
                     </p>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <!-- 主体内容end -->
