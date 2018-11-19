@@ -11,14 +11,15 @@ $(function(){
         }else if(s_value == "职位"){
             type = 2;
         }
-
+        //data:JSON.stringify(sendData),//使用变量sendData
         $.ajax({
             type: "post",
             url: baseURL+"/Home/Search/searchdetail",
             data: "type="+type+"&keyword="+encodeURI(tValue),
-            dataType: "json",
+            contentType: "application/json",
             success: function (data) {
                 console.log(data);
+                window.location.href = "/InviteBid/ExportTemplateFile";
             }
         });
         
