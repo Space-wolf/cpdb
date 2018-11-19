@@ -4,7 +4,7 @@ $(function(){
 
     $('#ret_btn').click(function() { 
         var s_value = $('#p_type').val();
-        var tValue = $('#text_value');
+        var tValue = $('#text_value').val();
         var type = 1;
         if(s_value == "姓名"){
             type = 1;
@@ -14,9 +14,9 @@ $(function(){
 
         $.ajax({
             type: "post",
-            url: baseURL+"/Home/Search/searchdetail"+"?type="+type+"&keyword"+tValue,
-            data: "data",
-            dataType: "jsonp",
+            url: baseURL+"/Home/Search/searchdetail",
+            data: "type="+type+"&keyword="+encodeURI(tValue),
+            dataType: "json",
             success: function (data) {
                 console.log(data);
             }
