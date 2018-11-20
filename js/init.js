@@ -1,15 +1,15 @@
 $(function () {
     //批量数据分析选项卡切换
-    $('.tfinfo_names li').click(function() {
+    $('.tfinfo_names li').click(function () {
         $(this).addClass('licheck').siblings().removeClass('licheck');
         console.log($('tf_box .figure_box').eq($(this).index()));
         $('.figure_box li').eq($(this).index()).addClass('show').siblings().removeClass('show');
     })
 
     var age_figure = echarts.init(document.getElementById('age_figure'));
-    
-    var option = {
 
+    var option = {
+        backgroundColor: '#fff',
         legend: {
             // orient: 'vertical',
             // top: 'middle',
@@ -50,24 +50,45 @@ $(function () {
     // 使用刚指定的配置项和数据显示图表。
     age_figure.setOption(option);
 
-    console.log(document.getElementById('age_figure'));
-    function convertCanvasToImage() {
-        html2canvas(document.getElementById('age_figure'), {
-                onrendered: function(canvas) {
-                    createPDFObject(canvas.toDataURL("image/jpeg"));
+    function convertCanvasToImage(ele) {
+        html2canvas(document.getElementById(ele), {
+            onrendered: function (canvas) {
+
+                var contentWidth = canvas.width;
+                var contentHeight = canvas.height;
+
+                //一页pdf显示html页面生成的canvas高度;
+                var pageHeight = contentWidth / 592.28 * 841.89;
+                //未生成pdf的html页面高度
+                var leftHeight = contentHeight;
+                //页面偏移
+                var position = 0;
+                //a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
+                var imgWidth = 595.28;
+                var imgHeight = 592.28 / contentWidth * contentHeight;
+                var pageData = canvas.toDataURL("image/jpeg", 1.0);
+                //默认a4纸张
+                var pdf = new jsPDF('', 'pt', "a4");
+                if (leftHeight < pageHeight) {
+                    pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+                } else {
+                    while (leftHeight > 0) {
+                        pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight);
+                        leftHeight -= pageHeight;
+                        position -= 841.89;
+                        //避免添加空白页
+                        if (leftHeight > 0) {
+                            pdf.addPage();
+                        }
+                    }
                 }
+                pdf.save('a4.pdf');
+            }
         });
     }
 
-    function createPDFObject(imgData) {
-        //默认a4纸张
-        var doc = new jsPDF('p', 'pt',"a3");
-        doc.addImage(imgData, 5, 5, 1000, 310, 'img');
-        doc.save('GCXDATA_PDF.pdf');
-    }
-    
-    $('#export').click(function(){
-        convertCanvasToImage();
+    $('#export').click(function () {
+        convertCanvasToImage("age_figure");
     });
-    
+
 });

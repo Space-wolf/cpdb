@@ -32,6 +32,7 @@
   text-align: center;
   cursor: pointer;
   position: relative;
+  background-color: #fff;
 }
 .tfinfo_names .licheck {
   margin-left: -1px;
