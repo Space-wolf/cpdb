@@ -49,4 +49,25 @@ $(function () {
 
     // 使用刚指定的配置项和数据显示图表。
     age_figure.setOption(option);
+
+    console.log(document.getElementById('age_figure'));
+    function convertCanvasToImage() {
+        html2canvas(document.getElementById('age_figure'), {
+                onrendered: function(canvas) {
+                    createPDFObject(canvas.toDataURL("image/jpeg"));
+                }
+        });
+    }
+
+    function createPDFObject(imgData) {
+        //默认a4纸张
+        var doc = new jsPDF('p', 'pt',"a3");
+        doc.addImage(imgData, 5, 5, 1000, 310, 'img');
+        doc.save('GCXDATA_PDF.pdf');
+    }
+    
+    $('#export').click(function(){
+        convertCanvasToImage();
+    });
+    
 });

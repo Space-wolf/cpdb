@@ -39,6 +39,12 @@
 .cdts_items, .birth_items, .ages_items, .address_items, .join_items, .education_items, .school_items{
     width: 874px;
 }
+.cdts_items{
+    .checkColor{
+        color: #4f6fb2;
+        font-weight: bold;
+    }
+}
 .ad_item{
     display: inline-block;
     width: 36px;
@@ -48,14 +54,17 @@
     margin-right: 18px;
     color: #999999;
     vertical-align: top;
+    &:hover{
+        color: #4f6fb2;
+    }
 }
 .date_box{
-    width: 80px;
+    width: 131px;
     height: 27px;
     margin-right: 10px;
     position: relative;
     input{
-        width: 49px;
+        width: 100px;
         padding-right: 29px;
         height: 25px;
         border: 1px solid #c2c2c5;

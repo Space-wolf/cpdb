@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/conditions.css">
+    <script src="../js/jquery1.11.1.min.js"></script>
+    <script src="../js/server.js"></script>
+    <script>
+        $(function () {
+            var url = location.search;
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.slice(1);
+                var strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split('=')[1]);
+                }
+            }
+            $('#cdts_seach').val(theRequest.type);
+            $("input[name='keyword']").val(theRequest.keyword);
+        })
+    </script>
 </head>
 
 <body id="singe_dta_add">
@@ -55,12 +72,11 @@
     <section class="cdts_content">
         <form action="" class="cdts_top">
             <div class="ret_box ret_reset">
-                <select class="fl">
-                    <option value="姓名">姓名</option>
-                    <option value="职位">职位</option>
-                    
+                <select class="fl" id="cdts_seach">
+                    <option value="1">姓名</option>
+                    <option value="2">职位</option>
                 </select>
-                <input type="text" class="fl">
+                <input type="text" class="fl" name="keyword">
                 <button type="submit" value="submit" class="ret_btn fl">搜索</button>
             </div>
             <ul class="cdts_box">
@@ -110,20 +126,12 @@
                     <span class="cdts_num fl">不限</span>
                     <div class="birth_items fl">
                         <div class="date_box fl">
-                            <input type="text" name="" id="birth_year" placeholder="1994">
-                            <i></i>
-                        </div>
-                        <div class="date_box fl">
-                            <input type="text" name="" id="birth_month" placeholder="10">
+                            <input type="text" name="" id="birth_year" placeholder="1994-07">
                             <i></i>
                         </div>
                         <span class="date_line fl">—</span>
                         <div class="date_box fl">
-                            <input type="text" name="" id="birth_year1" placeholder="1994">
-                            <i></i>
-                        </div>
-                        <div class="date_box fl">
-                            <input type="text" name="" id="birth_month1" placeholder="10">
+                            <input type="text" name="" id="birth_year1" placeholder="1994-07">
                             <i></i>
                         </div>
                     </div>
@@ -188,20 +196,12 @@
                     <span class="cdts_num fl">不限</span>
                     <div class="join_items fl">
                         <div class="date_box fl">
-                            <input type="text" name="" id="join_year" placeholder="1994">
-                            <i></i>
-                        </div>
-                        <div class="date_box fl">
-                            <input type="text" name="" id="join_month" placeholder="10">
+                            <input type="text" name="" id="join_year" placeholder="1994-07">
                             <i></i>
                         </div>
                         <span class="date_line fl">—</span>
                         <div class="date_box fl">
-                            <input type="text" name="" id="join_year1" placeholder="1994">
-                            <i></i>
-                        </div>
-                        <div class="date_box fl">
-                            <input type="text" name="" id="join_month1" placeholder="10">
+                            <input type="text" name="" id="join_year1" placeholder="1994-07">
                             <i></i>
                         </div>
                     </div>
@@ -351,46 +351,30 @@
         laydate.render({
             elem: '#birth_year',
             theme: '#4f6fb2',
-            type: 'year'
-        });
-        laydate.render({
-            elem: '#birth_month',
-            theme: '#4f6fb2',
             type: 'month',
-            format: 'MM'
+            value: '1980-01',
+            showBottom: false
         });
         laydate.render({
             elem: '#birth_year1',
             theme: '#4f6fb2',
-            type: 'year'
-        });
-        laydate.render({
-            elem: '#birth_month1',
-            theme: '#4f6fb2',
             type: 'month',
-            format: 'MM'
+            value: '2019-01',
+            showBottom: false
         });
         laydate.render({
             elem: '#join_year',
             theme: '#4f6fb2',
-            type: 'year'
-        });
-        laydate.render({
-            elem: '#join_month',
-            theme: '#4f6fb2',
             type: 'month',
-            format: 'MM'
+            value: '1980-01',
+            showBottom: false
         });
         laydate.render({
             elem: '#join_year1',
             theme: '#4f6fb2',
-            type: 'year'
-        });
-        laydate.render({
-            elem: '#join_month1',
-            theme: '#4f6fb2',
             type: 'month',
-            format: 'MM'
+            value: '1980-01',
+            showBottom: false
         });
 
     </script>
