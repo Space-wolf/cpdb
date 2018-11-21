@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>条件检索</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/conditions.css">
+    <script src="../js/jquery1.11.1.min.js"></script>
+    <script src="../js/init.js"></script>
+    <script src="../js/server.js"></script>    
+</head>
+
+<body id="singe_dta_add" onload="searchResult()">
+    <!-- 头部start -->
+    <header id="header">
+        <div class="wrap">
+            <div class="head_left fl">
+                <h1 class="logo fl">
+                    <img src="../images/logo.png" alt="">
+                </h1>
+                <nav class="nav fl">
+                    <a href="">首页</a>
+                    <a href="" class="btc">搜索</a>
+                    <a href="">收藏夹</a>
+                    <a href="">系统设置</a>
+                </nav>
+            </div>
+            <div class="head_right fr">
+                <form action="" class="search fl">
+                    <input type="text" class="search_inp">
+                    <i class="search_icon"></i>
+                    <input type="button" value="搜索" class="search_btn">
+                </form>
+                <div class="user fl">
+                    <i></i>
+                    <span class="user_name">张三</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部end -->
+
+    <!-- 面包屑导航start -->
+    <section id="smenu">
+        <div class="smenu_box">
+            <a href="javascript:;">当前位置</a>
+            >
+            <a href="">批量数据分析</a>
+        </div>
+    </section>
+    <!-- 面包屑导航end -->
+
+    <!-- 条件检索主体start -->
+    <section class="cdts_content">
+        <div class="resulf_box clearfix">
+            <div class="resulf_top fl">
+                <span class="resulf_tit fl">检索结果</span>
+                <div class="checkbox" id="all"></div>
+                <label for="all">全选</label>
+                <div class="checked" id="selected"></div>
+                <label for="selected">反选</label>
+                <a href="">批量分析</a>
+                <span class="fr">共有2条数据</span>
+            </div>
+            <ul class="resulf_items fl">
+                <!-- <li class="resulf_item fl">
+                    <img src="../images/people1.jpg" alt="" class="fl">
+                    <div class="text_info fl">
+                        <div class="info_top">
+                            <div class="top_left fl">
+                                <a href="" class="position fourteen">北京市委副书记、市长</a>
+                                <a href="" class="peo_name fourteen">陈吉宁</a>
+                            </div>
+                            <div class="top_center fl">
+                                <span>职位树位置</span>
+                                <a href="" class="fourteen">北京/市委</a>
+                            </div>
+                            <div class="top_right fr">
+                                <a href="" class="contrast">加入对比</a>
+                                <a href="" class="modify">修改</a>
+                                <a href="" class="collection">收藏</a>
+                            </div>
+                        </div>
+                        <div class="info_bottom">
+                            <ul class="inf_bottom_left fl">
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>汉族</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>吉林梨树</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">学历</label>
+                                    <span>研究生</span>
+                                </li>
+                            </ul>
+                            <ul class="inf_bottom_right fl">
+                                <li class="others">
+                                    <label class="right_label">出生日期</label>
+                                    <span>1964-08</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">参加工作时间</label>
+                                    <span>1985-09</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">入党时间</label>
+                                    <span>1984-07</span>
+                                </li>
+                            </ul>
+                            <div class="checkbox btn_posi"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="resulf_item fl">
+                    <img src="../images/people2.jpg" alt="" class="fl">
+                    <div class="text_info fl">
+                        <div class="info_top">
+                            <div class="top_left fl">
+                                <a href="" class="position fourteen">天津市委副书记、市长</a>
+                                <a href="" class="peo_name fourteen">张国清</a>
+                            </div>
+                            <div class="top_center fl">
+                                <span>职位树位置</span>
+                                <a href="" class="fourteen">北京/市委</a>
+                            </div>
+                            <div class="top_right fr">
+                                <a href="" class="contrast">加入对比</a>
+                                <a href="" class="modify">修改</a>
+                                <a href="" class="collection">收藏</a>
+                            </div>
+                        </div>
+                        <div class="info_bottom">
+                            <ul class="inf_bottom_left fl">
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>汉族</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">籍贯</label>
+                                    <span>河南梨山</span>
+                                </li>
+                                <li class="others">
+                                    <label class="">学历</label>
+                                    <span>研究生</span>
+                                </li>
+                            </ul>
+                            <ul class="inf_bottom_right fl">
+                                <li class="others">
+                                    <label class="right_label">出生日期</label>
+                                    <span>1964-08</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">参加工作时间</label>
+                                    <span>1985-09</span>
+                                </li>
+                                <li class="others">
+                                    <label class="right_label">入党时间</label>
+                                    <span>1984-07</span>
+                                </li>
+                            </ul>
+                            <div class="checked btn_posi"></div>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- 条件检索主体end -->
+    <script src="../js/laydate/laydate.js"></script>
+    <script type="text/javascript">
+        //日期控件
+        laydate.render({
+            elem: '#birth_year',
+            theme: '#4f6fb2',
+            type: 'month',
+            value: '1980-01',
+            showBottom: false
+        });
+        laydate.render({
+            elem: '#birth_year1',
+            theme: '#4f6fb2',
+            type: 'month',
+            value: '2019-01',
+            showBottom: false
+        });
+        laydate.render({
+            elem: '#join_year',
+            theme: '#4f6fb2',
+            type: 'month',
+            value: '1980-01',
+            showBottom: false
+        });
+        laydate.render({
+            elem: '#join_year1',
+            theme: '#4f6fb2',
+            type: 'month',
+            value: '1980-01',
+            showBottom: false
+        });
+
+    </script>
+</body>
+
+</html>

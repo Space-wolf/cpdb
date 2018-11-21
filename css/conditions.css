@@ -5,6 +5,7 @@
 }
 .cdts_content .cdts_top {
   width: 100%;
+  margin-bottom: 18px;
 }
 .cdts_content .cdts_top .ret_reset {
   width: 438px;
@@ -116,7 +117,6 @@
 }
 .resulf_box {
   width: 100%;
-  margin-top: 18px;
 }
 .resulf_box .resulf_top {
   width: 100%;
@@ -172,7 +172,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url(../images/chenked.png) 100% no-repeat;
+  background: url(../svg/checked.svg) 100% no-repeat;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -219,7 +219,7 @@
   color: #333333;
 }
 .info_top .top_center {
-  width: 200px;
+  width: 320px;
 }
 .info_top .top_center span {
   display: inline-block;

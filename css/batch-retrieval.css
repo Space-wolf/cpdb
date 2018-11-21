@@ -72,6 +72,7 @@ textarea:-ms-input-placeholder {
   resize: none;
 }
 .batch_form .bat_sbtn {
+  margin-top: 7px;
   width: 96px;
   height: 24px;
   border: 1px solid #4f6aaf;
@@ -79,6 +80,7 @@ textarea:-ms-input-placeholder {
   color: #fff;
 }
 .batch_form .cancel {
+  margin-top: 7px;
   width: 96px;
   height: 24px;
   margin-right: 5px;

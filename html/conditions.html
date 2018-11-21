@@ -11,22 +11,7 @@
     <link rel="stylesheet" href="../css/conditions.css">
     <script src="../js/jquery1.11.1.min.js"></script>
     <script src="../js/init.js"></script>
-    <script src="../js/server.js"></script>
-    <script>
-        $(function () {
-            var url = location.search;
-            var theRequest = new Object();
-            if (url.indexOf("?") != -1) {
-                var str = url.slice(1);
-                var strs = str.split("&");
-                for (var i = 0; i < strs.length; i++) {
-                    theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split('=')[1]);
-                }
-            }
-            $('#cdts_seach').val(theRequest.type);
-            $("input[name='keyword']").val(theRequest.keyword);
-        })
-    </script>
+    <script src="../js/server.js"></script>      
 </head>
 
 <body id="singe_dta_add">
@@ -69,33 +54,11 @@
     </section>
     <!-- 面包屑导航end -->
 
-    <!-- 二级导航start -->
-    <nav id="second_menu">
-        <div class="second_menu_box">
-            <a href="">中共中央</a>
-            <a href="">全国人大</a>
-            <a href="">国家主席</a>
-            <a href="">国务院</a>
-            <a href="">全国政协</a>
-            <a href="">中央军委</a>
-            <a href="">国家监察委员会</a>
-            <a href="">最高人民法院</a>
-            <a href="">最高人民检查院</a>
-            <a href="">党派群团</a>
-            <a href="">中管高校</a>
-            <a href="">中管央企</a>
-            <a href="">地方</a>
-            <a href="">上海</a>
-            <a href="" class="human_affairs">人事任免</a>
-        </div>
-    </nav>
-    <!-- 二级导航end -->
-
     <!-- 条件检索主体start -->
     <section class="cdts_content">
         <form action="" class="cdts_top">
             <div class="ret_box ret_reset">
-                <select class="fl" id="cdts_seach">
+                <select name="category" class="fl" id="cdts_seach" >
                     <option value="1">姓名</option>
                     <option value="2">职位</option>
                 </select>

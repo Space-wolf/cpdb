@@ -52,6 +52,7 @@
   color: #797a7c;
 }
 .users {
+  border-collapse: collapse;
   width: 876px;
   border: 1px solid #c8c8c9;
 }
@@ -69,6 +70,9 @@
 }
 .users .t_head .th_do {
   width: 396px;
+}
+.users .td_box:nth-of-type(even) {
+  background-color: #f2f2f2;
 }
 .users .td_box {
   height: 32px;

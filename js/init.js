@@ -1,4 +1,7 @@
 $(function () {
+    //请求域名
+    var baseURL = "https://www.easy-mock.com/mock/5bf36194cc4d7e6060d04c51";
+
     //批量数据分析选项卡切换
     $('.tfinfo_names li').click(function () {
         $(this).addClass('licheck').siblings().removeClass('licheck');

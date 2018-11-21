@@ -11,6 +11,7 @@ ul{
     padding:0;
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: #565656;
@@ -41,5 +42,9 @@ input{
     padding:0;
     cursor: pointer;
 }
+input:hover{
+    cursor: text;
+}
+
 
 
