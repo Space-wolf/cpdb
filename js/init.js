@@ -6,89 +6,34 @@ $(function () {
         $('.figure_box li').eq($(this).index()).addClass('show').siblings().removeClass('show');
     })
 
-    var age_figure = echarts.init(document.getElementById('age_figure'));
+    //条件搜索单选
+    $('.cdts_items .ad_item').click(function(){
+        stopDefault();
+        $(this).addClass('checkColor').siblings().removeClass('checkColor');
+    })
+    $('.ages_items .ad_item').click(function(){
+        stopDefault();
+        $(this).addClass('checkColor').siblings().removeClass('checkColor');
+    })
+    $('.address_items .ad_item').click(function(){
+        stopDefault();
+        $(this).addClass('checkColor').siblings().removeClass('checkColor');
+    })
+    $('.education_items .ad_item').click(function(){
+        stopDefault();
+        $(this).addClass('checkColor').siblings().removeClass('checkColor');
+    })
+    $('.education_items .list').click(function(){
+        stopDefault();
+        $(this).addClass('checkColor').siblings().removeClass('checkColor');
+    })
 
-    var option = {
-        backgroundColor: '#fff',
-        legend: {
-            // orient: 'vertical',
-            // top: 'middle',
-            bottom: 10,
-            left: 'center',
-            data: ['55岁', '56岁', '57岁', '58岁', '59岁', '60岁', '61岁', '62岁', '63岁', '64岁', '90岁']
-        },
-        series: [
-            {
-                type: 'pie',
-                radius: '65%',
-                center: ['50%', '50%'],
-                selectedMode: 'single',
-                data: [
-                    { value: 456, name: '55岁' },
-                    { value: 535, name: '56岁' },
-                    { value: 510, name: '57岁' },
-                    { value: 634, name: '58岁' },
-                    { value: 735, name: '59岁' },
-                    { value: 862, name: '60岁' },
-                    { value: 156, name: '61岁' },
-                    { value: 458, name: '62岁' },
-                    { value: 354, name: '63岁' },
-                    { value: 255, name: '64岁' },
-                    { value: 55, name: '90岁' },
-                ],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    };
-
-    // 使用刚指定的配置项和数据显示图表。
-    age_figure.setOption(option);
-
-    function convertCanvasToImage(ele) {
-        html2canvas(document.getElementById(ele), {
-            onrendered: function (canvas) {
-
-                var contentWidth = canvas.width;
-                var contentHeight = canvas.height;
-
-                //一页pdf显示html页面生成的canvas高度;
-                var pageHeight = contentWidth / 592.28 * 841.89;
-                //未生成pdf的html页面高度
-                var leftHeight = contentHeight;
-                //页面偏移
-                var position = 0;
-                //a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
-                var imgWidth = 595.28;
-                var imgHeight = 592.28 / contentWidth * contentHeight;
-                var pageData = canvas.toDataURL("image/jpeg", 1.0);
-                //默认a4纸张
-                var pdf = new jsPDF('', 'pt', "a4");
-                if (leftHeight < pageHeight) {
-                    pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
-                } else {
-                    while (leftHeight > 0) {
-                        pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight);
-                        leftHeight -= pageHeight;
-                        position -= 841.89;
-                        //避免添加空白页
-                        if (leftHeight > 0) {
-                            pdf.addPage();
-                        }
-                    }
-                }
-                pdf.save('a4.pdf');
-            }
-        });
+    //阻止默认事件函数
+    function stopDefault(e) {
+        if (e && e.preventDefault)
+            e.preventDefault();
+        else
+            window.event.returnValue = false; //兼容IE
     }
-
-    $('#export').click(function () {
-        convertCanvasToImage("age_figure");
-    });
 
 });

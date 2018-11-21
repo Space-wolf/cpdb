@@ -39,12 +39,6 @@
 .cdts_items, .birth_items, .ages_items, .address_items, .join_items, .education_items, .school_items{
     width: 874px;
 }
-.cdts_items{
-    .checkColor{
-        color: #4f6fb2;
-        font-weight: bold;
-    }
-}
 .ad_item{
     display: inline-block;
     width: 36px;
@@ -100,12 +94,18 @@
         vertical-align: top;
     }
 }
-.education_items .list{
-    display: inline-block;
-    margin-right: 30px;
-    height: 27px;
-    line-height: 27px;
-    color: #999999;
+.education_items {
+    .list{
+        display: inline-block;
+        margin-right: 30px;
+        height: 27px;
+        line-height: 27px;
+        color: #999999; 
+    }
+    .checkColor{
+        color: #4f6fb2;
+        font-weight: bold;
+    }
 }
 .school_items input{
     width: 148px;
@@ -289,4 +289,8 @@
     position: absolute;
     left: 10px;
     top: 11px;
+}
+.checkColor{
+    color: #4f6fb2;
+    font-weight: bold;
 }
