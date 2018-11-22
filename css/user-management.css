@@ -2,7 +2,9 @@
   width: 100%;
 }
 .userMmanagement .user_manageBox .superLeft_nav {
-  margin-top: 20px;
+  padding-top: 20px;
+  border-right: 2px solid #f3f4f8;
+  height: 86vh;
 }
 .userMmanagement .user_manageBox .right_user_manage {
   min-width: 670px;

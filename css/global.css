@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 body {
   width: 100%;
   height: 100%;
@@ -114,7 +117,6 @@ body {
 }
 #smenu .smenu_box {
   margin: 0 auto;
-  width: 1286px;
   padding: 0 40px;
 }
 #smenu .smenu_box a {
@@ -155,7 +157,6 @@ body {
 .ret_box {
   width: 100%;
   height: 34px;
-  box-shadow: 0 5px 5px rgba(237, 237, 238, 0.8);
 }
 .ret_box select {
   width: 52px;
@@ -177,6 +178,7 @@ body {
   border: none;
   outline: none;
   padding: 0 13px;
+  box-shadow: 2px 2px 3px rgba(237, 237, 238, 0.85);
 }
 .ret_box .ret_btn {
   width: 60px;
